@@ -18,6 +18,9 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.0.1'
+}
 checkstyle {
     configFile file("config/checkstyle/checkstyle.xml")
 }
