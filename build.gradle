@@ -7,11 +7,12 @@
  * For more details take a look at the Java Libraries chapter in the Gradle
  * User Manual available at https://docs.gradle.org/5.6.1/userguide/java_library_plugin.html
  *id 'findbugs'
+*id 'pmd'
+*id 'checkstyle'
  */
 plugins {
     id 'java-library'
-    id 'pmd'
-    id 'checkstyle'
+
     
 }
 java {
@@ -59,7 +60,7 @@ dependencies {
     implementation 'com.google.guava:guava:28.0-jre'
     
     //This is the checkstyle dependency
-    checkstyle 'com.puppycrawl.tools:checkstyle:8.2'
+    //checkstyle 'com.puppycrawl.tools:checkstyle:8.2'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
