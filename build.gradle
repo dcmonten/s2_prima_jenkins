@@ -18,6 +18,7 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+/*
 checkstyle {
     configFile file("config/checkstyle/checkstyle.xml")
 }
@@ -27,7 +28,7 @@ checkstyleMain {
 checkstyleTest {
     source ='src/test/java'
 }
-/*
+
 findbugs {
     ignoreFailures = false
     toolVersion = "3.0.1"
